@@ -25,17 +25,31 @@ video {
 
 .hero > div {
   position: absolute;
-  top: 60vh;
-  left: 8vh;
-  color: indigo;
-  background: rgb(128 128 128 / 79%);
+  top: 50vh;
+  left: 10vh;
+  color: 5px 5px 20px indigo;
+  background: rgb(128 128 128 / 60%);
   width: 400px;
   padding: 1rem;
   border-radius: 20px;
-  box-shadow: 5px 5px 20px indigo;
+}
+
+.down {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  transform: rotate(270deg);
+  bottom: 100px;
+  left: 50%;
+  animation: goDown 2s infinite;
 }
 
 /* <!-- Nav section --> */
+
+.logo {
+  font-size: 20px;
+  color: indigo;
+}
 
 nav {
   background: grey;
@@ -58,6 +72,16 @@ nav ul {
 
 ul > li {
   padding: 0.5rem;
+  font-size: 20px;
+}
+
+nav ul li {
+  transition: transform 0.5s;
+}
+nav ul li:hover {
+  color: indigo;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 /* <!-- Paragraph section --> */
@@ -104,4 +128,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@keyframes goDown {
+  0% {
+    color: white;
+    bottom: 100px;
+  }
+
+  100% {
+    bottom: 10px;
+  }
 }
