@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+/* <!-- Hero section -->*/
+.hero {
+  height: 90vh;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero > div {
+  position: absolute;
+  top: 60vh;
+  left: 8vh;
+  color: indigo;
+  background: rgb(128 128 128 / 79%);
+  width: 400px;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px indigo;
+}
+
+/* <!-- Nav section --> */
+
+nav {
+  background: grey;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+ul > li {
+  padding: 0.5rem;
+}
+
+/* <!-- Paragraph section --> */
+
+/* <!-- Image section --> */
+.section1 {
+  background: url(./assets/a.avif) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section2 {
+  background: url(./assets/b.avif) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section3 {
+  background: url(./assets/c.avif) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+[class^='section'] {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  background: rgb(128 128 128 / 79%);
+  color: white;
+  font-size: 2rem;
+  padding: 1.4rem 5rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+/* <!-- Footer section --> */
+footer {
+  background: rgb(128 128 128 / 79%);
+  color: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
